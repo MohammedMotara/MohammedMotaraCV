@@ -1,0 +1,49 @@
+@import '../../assets/variables.scss';
+
+.navigationBar {
+    border-right: $primary-color solid 15px;
+    width: 12%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .profileSection {
+        height: 30vh;
+        width: 100%;
+
+        .picture {
+            height: 40%;
+            width: 60%;
+            background-image: url('../../assets/images/IMG_0491.JPG');
+            background-size: cover;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .name{
+            text-align: center;
+            margin-top: 20px;
+            color: $primary-text-color;
+        }
+    }
+
+    .navigationLinks {
+        height: 35%;
+
+        .navigationItem {
+            border: $primary-color solid 1px;
+            height: 20%;
+            text-align: center;
+            padding-top: 10%;
+            font-size: 14px;
+        }
+        .navigationItem:hover {
+            border-right: $secondary-color solid 3px;
+            background-color: $primary-color;
+        }
+    }
+
+    .socialLinks {
+        border: red solid 1px;
+        height: 10%;
+    }
+}

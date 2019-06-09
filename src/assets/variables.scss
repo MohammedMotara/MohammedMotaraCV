@@ -1,0 +1,47 @@
+// Color Scheme
+$primary-color: #F5F5F5;
+$secondary-color: #0198E5;
+
+// Text Colors
+$primary-text-color: #333333;
+
+// Fonts 
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$text-font: 'Oxygen', sans-serif;
+$text-weight: 300;
+$text-size: 12px;
+
+$heading-font: 'Raleway', sans-serif;
+$sub-heading-weight: 400;
+$section-heading-weight: 700;
+
+// Padding and Margins
+$component-side-margin: 5vw;
+$base-padding: 15px;
+$base-margin: 15px;
+
+
+// Box stylings
+$primary-box-color: white;
+
+
+// Effects and Animations
+$uniform-box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+$hover-box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+
+//inheritance
+
+
+//global styles 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// animations
+
+// Media Queries
