@@ -11,12 +11,12 @@ export interface IState {
  
 class NavigationBar extends React.Component<IProps, IState> {
     // state = { :  }
-    render() { 
+    public render() { 
         return ( 
             <section className={styles.navigationBar}>
                 <div className={styles.profileSection}>
                     <div className={styles.picture} />
-                    <h1 className={styles.name}>Mohammed Motara</h1>
+                    <h1 className={styles.name}>Mo Motara</h1>
                 </div>
 
                 <ul className={styles.navigationLinks}>
@@ -28,9 +28,18 @@ class NavigationBar extends React.Component<IProps, IState> {
                 </ul>
 
                 <div className={styles.socialLinks}>
-                    <div className={styles.socialButton}></div>
-                    <div className={styles.socialButton}></div>
-                    <div className={styles.socialButton}></div>
+
+                    <div className={styles.socialButton}>
+                        
+                    </div>
+
+                    <div className={styles.socialButton}>
+
+                    </div>
+
+                    <div className={styles.socialButton}>
+
+                    </div>
                 </div>
 
             </section>
