@@ -1,0 +1,39 @@
+@import '../../assets/variables.scss';
+
+.aboutMePageContainer {
+    margin-left: 160px;
+    border: red solid 1px;
+
+    .mainProfilePicture {
+        border: blue solid 1px;
+        height: 72vh;
+        width: 50%;
+        display: inline-block;
+        background-image: url('../../assets/images/IMG_0491.JPG');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .personalBlurb {
+        border: orange solid 1px;
+        height: 100%;
+        width: 50%;
+        float: right;
+        padding: 5%;
+
+        .name {
+            color: $primary-text-color;
+        }
+
+        .currentRole {
+            font-size: 14px;
+            color: $sub-title-color;
+            margin-top: 10px;
+        }
+
+    }
+
+    
+}
+
+
