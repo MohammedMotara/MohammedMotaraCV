@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styles from './navigationBar.module.scss';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitterSquare, faMedium, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 export interface IProps {
     
 }
@@ -29,17 +31,19 @@ class NavigationBar extends React.Component<IProps, IState> {
 
                 <div className={styles.socialLinks}>
 
-                    <div className={styles.socialButton}>
-                        
+                    <div className={styles.faTwitter}>
+                        <FontAwesomeIcon className={styles.logo} icon={faTwitterSquare}/>
+                    </div>
+                    <div className={styles.faMedium}>
+                        <FontAwesomeIcon className={styles.logo} icon={faMedium}/>
+                    </div>
+                    <div className={styles.faLinkedin}>
+                        <FontAwesomeIcon className={styles.logo} icon={faLinkedin}/>
+                    </div>
+                    <div className={styles.faBars}>
+                        <FontAwesomeIcon className={styles.logo} icon={faBars}/>
                     </div>
 
-                    <div className={styles.socialButton}>
-
-                    </div>
-
-                    <div className={styles.socialButton}>
-
-                    </div>
                 </div>
 
             </section>
