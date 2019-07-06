@@ -1,16 +1,16 @@
 @import '../../assets/variables.scss';
 
 .navigationBar {
-    border-right: $primary-color solid 15px;
+    border-right: $secondary-color solid 15px;
     width: 160px;
-    height: 100vh;
+    height: 100%;
     display: flex;
     position: fixed;
     overflow: auto;
     flex-direction: column;
 
     .profileSection {
-        height: 27vh;
+        height: 25%;
         width: 100%;
 
         .picture {
@@ -25,11 +25,13 @@
             text-align: center;
             margin: 20px 20px 0px 20px;
             color: $primary-text-color;
+            border-bottom: $secondary-color solid 2px;
         }
     }
 
     .navigationLinks {
         height: 35%;
+        margin-top: 20%;
 
         .navigationItem {
             border: $primary-color solid 1px;
@@ -39,13 +41,112 @@
             font-size: 14px;
         }
         .navigationItem:hover {
-            border-right: $secondary-color solid 3px;
+            border-bottom: $secondary-color solid 2px;
             background-color: $primary-color;
         }
     }
 
     .socialLinks {
-        border: red solid 1px;
-        height: 10%;
+        height: 35%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        .faTwitter, .faMedium, .faLinkedin {
+            font-size: 30px;
+            color: $secondary-color;
+        }
+
+        .faBars {
+            visibility: hidden;
+        }
     }
+}
+
+@media (max-width: 1024px) {
+
+    .navigationBar {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $primary-color;
+        border-bottom: $secondary-color solid 15px;
+        border-right: none;
+        overflow: hidden;
+        height: 70px;
+
+        .profileSection {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+    
+            .picture {
+                height: 40px;
+                width: 40px;
+                background-image: url('../../assets/images/IMG_0491.JPG');
+                background-size: cover;
+                margin: 0;
+                margin-left: 20px;
+            }
+            .name {
+                text-align: center;
+                margin: 0px;
+                margin-left: 20px;
+                color: $primary-text-color;
+            }
+        }
+    
+        .navigationLinks {
+            display: none;
+            height: 35%;
+            margin-top: 20%;
+    
+            .navigationItem {
+                border: $primary-color solid 1px;
+                height: 20%;
+                text-align: center;
+                padding-top: 10%;
+                font-size: 14px;
+            }
+            .navigationItem:hover {
+                border-bottom: $secondary-color solid 2px;
+                background-color: $primary-color;
+            }
+        }
+    
+        .socialLinks {
+            height: 100%;
+            width: 50%;
+            margin-top: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            .faTwitter, .faMedium, .faLinkedin {
+                font-size: 30px;
+                color: $secondary-color;
+                visibility: visible;
+            }
+
+            .faBars {
+                visibility: visible;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
 }

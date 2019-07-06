@@ -2,27 +2,29 @@
 
 .aboutMePageContainer {
     margin-left: 160px;
-    border: red solid 1px;
 
     .mainProfilePicture {
-        border: blue solid 1px;
         height: 72vh;
-        width: 50%;
+        width: 52%;
         display: inline-block;
         background-image: url('../../assets/images/IMG_0491.JPG');
+        max-width:100%;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .personalBlurb {
-        border: orange solid 1px;
         height: 100%;
-        width: 50%;
+        width: 48%;
         float: right;
         padding: 5%;
 
         .name {
             color: $primary-text-color;
+            font-size: 48px;
+            width: 100%;
+            float: center;
+            border-bottom: $secondary-color solid 2px;
         }
 
         .currentRole {
@@ -31,9 +33,142 @@
             margin-top: 10px;
         }
 
+        .aboutMePara1 {
+            margin-top: 30px;
+            color: $primary-text-color;
+            font-size: 14px;
+            font-family: $text-font;
+            font-weight: $text-weight;
+            overflow: hidden;
+        }
+
+        .aboutMePara2 {
+            margin-top: 30px;
+            color: $primary-text-color;
+            font-size: 14px;
+            font-family: $text-font;
+            font-weight: $text-weight;
+            overflow: hidden;
+        }
+
+        .downloadCVButton {
+            background-color: $secondary-color;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
     }
 
+    .introductorySection {
+        height: 1000px;
+        width: 100%;
+        border: green solid 1px;
+        padding: 5%;
+
+        .services {
+            font-size: 24px;
+            display: block;
+            width: 195px;
+            border-bottom: $secondary-color solid 2px;
+
+        }
+    }
     
 }
 
+@media (max-width: 1024px) {
 
+    .aboutMePageContainer {
+        margin-left: 0px;
+    
+        .mainProfilePicture {
+            height: 40vh;
+            width: 100%;
+            background-image: url('../../assets/images/IMG_0491\ copy.JPG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 70px;
+        }
+    
+        .personalBlurb {
+            height: 100%;
+            width: 48%;
+            float: right;
+            padding: 5%;
+    
+            .name {
+                color: $primary-text-color;
+                font-size: 48px;
+                width: 100%;
+                float: center;
+                border-bottom: $secondary-color solid 2px;
+            }
+    
+            .currentRole {
+                font-size: 14px;
+                color: $sub-title-color;
+                margin-top: 10px;
+            }
+    
+            .aboutMePara1 {
+                margin-top: 30px;
+                color: $primary-text-color;
+                font-size: 14px;
+                font-family: $text-font;
+                font-weight: $text-weight;
+            }
+    
+            .aboutMePara2 {
+                margin-top: 30px;
+                color: $primary-text-color;
+                font-size: 14px;
+                font-family: $text-font;
+                font-weight: $text-weight;
+            }
+    
+            .downloadCVButton {
+                background-color: $secondary-color;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+        }
+    
+        .introductorySection {
+            height: 1000px;
+            width: 100%;
+            border: green solid 1px;
+            padding: 5%;
+    
+            .services {
+                font-size: 24px;
+                display: block;
+                width: 195px;
+                border-bottom: $secondary-color solid 2px;
+    
+            }
+        }
+        
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+}
