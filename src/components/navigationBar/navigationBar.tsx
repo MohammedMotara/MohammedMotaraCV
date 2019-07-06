@@ -24,7 +24,7 @@ class NavigationBar extends React.Component<IProps, IState> {
                 <ul className={styles.navigationLinks}>
                     <li className={styles.navigationItem}>About Me</li>
                     <li className={styles.navigationItem}>Resume/CV</li>
-                    <li className={styles.navigationItem}>Portfolio</li>
+                    <li className={styles.navigationItem}>Projects</li>
                     <li className={styles.navigationItem}>Blog</li>
                     <li className={styles.navigationItem}>Contact</li>
                 </ul>
