@@ -96,6 +96,15 @@
             background-repeat: no-repeat;
             margin-top: 70px;
         }
+
+        .adjustedMarginProfilePicture {
+            height: 40vh;
+            width: 100%;
+            background-image: url('../../assets/images/mobileImage.JPG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 0px;
+        }
     
         .personalBlurb {
             height: 100%;
@@ -174,7 +183,7 @@
         .mainProfilePicture {
             height: 40vh;
             width: 100%;
-            background-image: url('../../assets/images/IMG_0491\ copy.JPG');
+            background-image: url('../../assets/images/mobileImage.JPG');
             background-size: cover;
             background-repeat: no-repeat;
             margin-top: 70px;
@@ -250,8 +259,6 @@
 }
 
 
-
-
 @media (max-width: 480px) {
     .aboutMePageContainer {
         margin-left: 0px;
@@ -259,11 +266,12 @@
         .mainProfilePicture {
             height: 40vh;
             width: 100%;
-            background-image: url('../../assets/images/Webp.net-resizeimage.jpg');
+            background-image: url('../../assets/images/mobileImage.JPG');
             background-size: cover;
             background-repeat: no-repeat;
             margin-top: 70px;
         }
+
     
         .personalBlurb {
             height: 100%;

@@ -3,20 +3,27 @@ import NavigationBar from '../../components/navigationBar/navigationBar';
 import styles from './aboutMePageContainer.module.scss';
 
 export interface IProps {
-    
+    menuStatus: boolean, 
 }
  
 export interface IState {
-    
+    menuOpen: boolean,
 }
  
 class AboutMe extends React.Component<IProps, IState> {
-    // state = { :  }
-    render() { 
+    public state = {
+        menuOpen : this.props.menuStatus
+    }
+
+    public render() { 
+
+        const fixMargin = this.props.menuStatus ?  styles.adjustedMarginProfilePicture: styles.mainProfilePicture;
+
         return ( 
             <section className={styles.aboutMePageContainer}>
-            
-                <div className={styles.mainProfilePicture} />
+            {console.log(this.props.menuStatus)}
+
+                <div className={`${fixMargin} ${styles.adjustedMarginProfilePicture}`}/>
                 <div className={styles.personalBlurb}>
                     <h1 className={styles.name}>Mohammed Motara</h1>
                     <h2 className={styles.currentRole}>DevOps</h2>

@@ -3,18 +3,30 @@ import styles from './navigationBar.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitterSquare, faMedium, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Dropdown from './dropdown';
+
 export interface IProps {
-    
+    updateMenuStatus: () => void,
+    menuStatus: boolean, 
 }
  
 export interface IState {
-    
+    menuOpen: boolean;
+
 }
  
 class NavigationBar extends React.Component<IProps, IState> {
-    // state = { :  }
+    public state = { 
+        menuOpen: this.props.menuStatus
+     };
+
+     
     public render() { 
-        return ( 
+        const openDropDown = this.props.menuStatus ? styles.showDropDown: "";
+
+        return (
+            <section>
+                {/* {console.log(this.props.menuStatus)} */}
             <section className={styles.navigationBar}>
                 <div className={styles.profileSection}>
                     <div className={styles.picture} />
@@ -40,15 +52,23 @@ class NavigationBar extends React.Component<IProps, IState> {
                     <div className={styles.faLinkedin}>
                         <FontAwesomeIcon className={styles.logo} icon={faLinkedin}/>
                     </div>
-                    <div className={styles.faBars}>
+                    <div className={styles.faBars} onClick={this.props.updateMenuStatus}>
                         <FontAwesomeIcon className={styles.logo} icon={faBars}/>
+                        {/* {console.log(this.state.menuOpen)} */}
                     </div>
-
                 </div>
-
             </section>
+
+            <div className={`${styles.dropDown} ${openDropDown}`}>
+                <Dropdown />
+            </div>
+        </section>
+            
          );
     }
+
+
+
 }
  
 export default NavigationBar;

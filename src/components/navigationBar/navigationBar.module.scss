@@ -65,6 +65,10 @@
     }
 }
 
+.dropDown {
+    display: none;
+}
+
 @media (max-width: 1024px) {
 
     .navigationBar {
@@ -78,7 +82,7 @@
         border-right: none;
         overflow: hidden;
         height: 70px;
-
+    
         .profileSection {
             height: 100%;
             width: 50%;
@@ -139,10 +143,18 @@
                 visibility: visible;
                 font-size: 30px;
             }
+
+            .changeColour {
+                color: red;
+            }
         }
     }
+    
 }
 
+.showDropDown {
+    display: inline-block;
+}
 
 
 @media (max-width: 480px) {
@@ -222,3 +234,7 @@
         }
     }
 }
+
+// .dropDown {
+//     display: none;
+// }
