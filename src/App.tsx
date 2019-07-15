@@ -4,6 +4,7 @@ import './App.css';
 import AboutMe from './containers/aboutMePage/aboutMePageContainer';
 import NavigationBar from './components/navigationBar/navigationBar';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import AllPages from './containers/allPages/allPages';
 
 // Sort out Library Font Awesome Function Later
 
@@ -14,8 +15,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 const App: React.FC = () => {
   return (
     <>
-      <NavigationBar />
-      <AboutMe />
+      <AllPages />
     </>
   );
 }
