@@ -29,22 +29,16 @@ class AboutMe extends React.Component<IProps, IState> {
                     <h2 className={styles.currentRole}>DevOps</h2>
 
                     <p className={styles.aboutMePara1}>
-                        Welcome to my site. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Welcome to my site. This site is intended to give you a short snippet into 
+                        what I can offer you. Please explore the site and read my content.
                     </p>
 
                     <p className={styles.aboutMePara2}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        One of the most important traits I pride myself on is my commercial 
+                        curiosity. Therefore, It's no suprise, that one of my favourite questions
+                        to ask is: why? I hope that as a reader you can see this question throughout
+                        my experiences, whether that is through my blog posts or through the tangible
+                        results I have produced through changing workflows and processes in my roles.
                     </p>
 
                     <button className={styles.downloadCVButton}>Formal CV</button>
