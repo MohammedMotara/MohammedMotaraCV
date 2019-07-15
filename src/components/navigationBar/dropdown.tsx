@@ -17,10 +17,10 @@ class Dropdown extends React.Component<IProps, IState> {
         return ( 
             <section className={styles.dropdown}>
                 <ul className={styles.allLinks}>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                    <li>D</li>
+                    <li>CV</li>
+                    <li>Projects</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
                 </ul>
             </section>
          );

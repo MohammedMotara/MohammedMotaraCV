@@ -29,6 +29,7 @@ class AboutMe extends React.Component<IProps, IState> {
                     <h2 className={styles.currentRole}>DevOps</h2>
 
                     <p className={styles.aboutMePara1}>
+                        Welcome to my site. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

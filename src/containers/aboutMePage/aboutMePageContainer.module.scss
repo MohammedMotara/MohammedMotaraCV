@@ -68,7 +68,6 @@
     .introductorySection {
         height: 1000px;
         width: 100%;
-        border: green solid 1px;
         padding: 5%;
 
         .services {
@@ -103,7 +102,7 @@
             background-image: url('../../assets/images/mobileImage.JPG');
             background-size: cover;
             background-repeat: no-repeat;
-            margin-top: 0px;
+            margin-top: 70px;
         }
     
         .personalBlurb {
@@ -159,7 +158,6 @@
         .introductorySection {
             height: 1000px;
             width: 100%;
-            border: green solid 1px;
             padding: 5%;
     
             .services {
@@ -175,7 +173,7 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .aboutMePageContainer {
         margin-left: 0px;
@@ -188,18 +186,25 @@
             background-repeat: no-repeat;
             margin-top: 70px;
         }
+
+        .adjustedMarginProfilePicture {
+            height: 40vh;
+            width: 100%;
+            background-image: url('../../assets/images/mobileImage.JPG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 70px;
+        }
     
         .personalBlurb {
             height: 100%;
             width: 100%;
             padding: 5%;
-            border: red solid 1px;
     
             .name {
                 color: $primary-text-color;
                 font-size: 48px;
                 width: 100%;
-                // float: center;
                 border-bottom: $secondary-color solid 2px;
             }
     
@@ -242,7 +247,6 @@
         .introductorySection {
             height: 1000px;
             width: 100%;
-            border: green solid 1px;
             padding: 5%;
     
             .services {
@@ -272,12 +276,19 @@
             margin-top: 70px;
         }
 
-    
+        .adjustedMarginProfilePicture {
+            height: 40vh;
+            width: 100%;
+            background-image: url('../../assets/images/mobileImage.JPG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 70px;
+        }
+
         .personalBlurb {
             height: 100%;
             width: 100%;
             padding: 5%;
-            border: red solid 1px;
     
             .name {
                 color: $primary-text-color;
@@ -325,7 +336,6 @@
         .introductorySection {
             height: 1000px;
             width: 100%;
-            border: green solid 1px;
             padding: 5%;
     
             .services {
