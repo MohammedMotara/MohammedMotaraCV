@@ -3,7 +3,7 @@ import styles from './navigationBar.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitterSquare, faMedium, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Dropdown from './dropdown';
+// import Dropdown from './dropdown';
 
 export interface IProps {
     updateMenuStatus: () => void,
@@ -22,7 +22,7 @@ class NavigationBar extends React.Component<IProps, IState> {
 
      
     public render() { 
-        const openDropDown = this.props.menuStatus ? styles.showDropDown: "";
+        // const openDropDown = this.props.menuStatus ? styles.showDropDown: "";
 
         return (
             <section>
@@ -54,14 +54,9 @@ class NavigationBar extends React.Component<IProps, IState> {
                     </div>
                     <div className={styles.faBars} onClick={this.props.updateMenuStatus}>
                         <FontAwesomeIcon className={styles.logo} icon={faBars}/>
-                        {/* {console.log(this.state.menuOpen)} */}
                     </div>
                 </div>
             </section>
-
-            <div className={`${styles.dropDown} ${openDropDown}`}>
-                <Dropdown />
-            </div>
         </section>
             
          );

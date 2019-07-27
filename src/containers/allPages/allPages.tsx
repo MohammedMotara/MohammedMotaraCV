@@ -17,10 +17,10 @@ class AllPages extends React.Component<IProps, IState> {
 
     public render() { 
         return (
-            <section>
+        <section>
                 <NavigationBar updateMenuStatus={this.toggleMenu} menuStatus={this.state.menuOpen} />
                 <AboutMe menuStatus={this.state.menuOpen}/>
-            </section>
+        </section>
          )
     };
 
