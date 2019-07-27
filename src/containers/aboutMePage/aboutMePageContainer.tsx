@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Service from '../../components/service/service';
 import styles from './aboutMePageContainer.module.scss';
+import { servicesArray } from '../../assets/HardCodedData/aboutMePageData';
 
 export interface IProps {
     menuStatus: boolean, 
@@ -46,15 +47,13 @@ class AboutMe extends React.Component<IProps, IState> {
                     <h3 className={styles.servicesSectionTitle}>What can I do?</h3>
                     
                     <div className={styles.services}>
-                        <Service skill={"Start-ups"}/>
-                        <Service skill={"Data & Privacy"} />
-                        <Service skill={"Tech Policy & Regulation"} />
-                        <Service skill={"DevOps"} />
-                        <Service skill={"ML Models"} />
-                        <Service skill={"Front End Development"} />
+                        {servicesArray.map((service) => 
+                            <Service skill={service} key={servicesArray.indexOf(service)}/>
+                        )}
                     </div>
 
                     <section className={styles.clientsAndPreviousWork}/>
+                    
                 </section>
             </section>
          );

@@ -14,9 +14,7 @@ class Service extends React.Component<IProps, IState> {
     public render() { 
         return ( 
             <article className={styles.service}>
-                <div>
-
-                </div>
+                <div />
                 <h2>{this.props.skill}</h2>
             </article>
          );
