@@ -47,9 +47,14 @@ class AboutMe extends React.Component<IProps, IState> {
                     <h3 className={styles.servicesSectionTitle}>What can I do?</h3>
                     
                     <div className={styles.services}>
-                        {servicesArray.map((service) => 
-                            <Service skill={service} key={servicesArray.indexOf(service)}/>
-                        )}
+                        {
+                            servicesArray.map((service) => 
+                                <Service 
+                                    skill={service.service} 
+                                    icon={service.serviceIcon} 
+                                    key={servicesArray.indexOf(service)}
+                                />)
+                        }
                     </div>
 
                     <section className={styles.clientsAndPreviousWork}/>

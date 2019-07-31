@@ -2,8 +2,22 @@
 
 
 .service {
-    border: red solid 1px;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .fontAwesomeIcon {
+        font-size: 80px;
+        color: $primary-text-color;
+    }
+
+    .skill {
+        font-size: 15px;
+        text-align: center;
+        color: $secondary-color;
+    }
 }

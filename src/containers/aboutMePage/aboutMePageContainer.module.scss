@@ -70,12 +70,21 @@
         height: 1000px;
         width: 100%;
         padding: 5%;
-        border: green solid 1px;
+        // margin-top: 20px;
+        // border: green solid 1px;
 
         .servicesSectionTitle {
             font-size: 24px;
+            color: $primary-text-color;
             width: 170px;
+            // display: block;
             border-bottom: $secondary-color solid 2px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
 
     }
@@ -97,14 +106,6 @@
             margin-top: 70px;
         }
 
-        // .adjustedMarginProfilePicture {
-        //     height: 40vh;
-        //     width: 100%;
-        //     background-image: url('../../assets/images/mobileImage.JPG');
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     margin-top: 70px;
-        // }
     
         .personalBlurb {
             height: 100%;
@@ -161,7 +162,7 @@
             height: 1000px;
             width: 100%;
             padding: 5%;
-            border: green solid 1px;
+            // border: green solid 1px;
     
             .servicesSectionTitle {
                 font-size: 24px;
@@ -189,14 +190,6 @@
             margin-top: 70px;
         }
 
-        // .adjustedMarginProfilePicture {
-        //     height: 40vh;
-        //     width: 100%;
-        //     background-image: url('../../assets/images/mobileImage.JPG');
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     margin-top: 70px;
-        // }
     
         .personalBlurb {
             height: 100%;
@@ -251,7 +244,7 @@
             height: 1000px;
             width: 100%;
             padding: 5%;
-            border: green solid 1px;
+            // border: green solid 1px;
     
             .servicesSectionTitle {
                 font-size: 24px;
@@ -278,15 +271,6 @@
             background-repeat: no-repeat;
             margin-top: 70px;
         }
-
-        // .adjustedMarginProfilePicture {
-        //     height: 40vh;
-        //     width: 100%;
-        //     background-image: url('../../assets/images/mobileImage.JPG');
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     margin-top: 70px;
-        // }
 
         .personalBlurb {
             height: 100%;
@@ -340,12 +324,15 @@
             height: 1000px;
             width: 100%;
             padding: 5%;
-            border: green solid 1px;
+            // border: green solid 1px;
     
             .servicesSectionTitle {
                 font-size: 24px;
                 width: 170px;
                 border-bottom: $secondary-color solid 2px;
+                margin-top: 20px;
+                // float: right;
+                display: block;
             }
     
         }
