@@ -38,6 +38,8 @@ class AboutMe extends React.Component<IProps, IState> {
                         to ask is: why? I hope that as a reader you can see this question throughout
                         my experiences, whether that is through my writing/commentary or via the tangible
                         results I have produced when changing workflows and processes in my roles.
+
+                        REACT JS BURGER POP-OUT module
                     </p>
 
                     <button className={styles.downloadCVButton}>Formal CV</button>

@@ -1,76 +1,5 @@
 @import '../../assets/variables.scss';
 
-.navigationBar {
-    border-right: $secondary-color solid 15px;
-    width: 160px;
-    height: 100%;
-    display: flex;
-    position: fixed;
-    overflow: auto;
-    flex-direction: column;
-
-    .profileSection {
-        height: 25%;
-        width: 100%;
-
-        .picture {
-            height: 80px;
-            width: 80px;
-            background-image: url('../../assets/images/IMG_0491.JPG');
-            background-size: cover;
-            margin: auto;
-            margin-top: 35px;
-        }
-        .name {
-            text-align: center;
-            margin: 20px 20px 0px 20px;
-            color: $primary-text-color;
-            border-bottom: $secondary-color solid 2px;
-        }
-    }
-
-    .navigationLinks {
-        height: 35%;
-        margin-top: 20%;
-
-        .navigationItem {
-            border: $primary-color solid 1px;
-            height: 20%;
-            text-align: center;
-            padding-top: 10%;
-            font-size: 14px;
-        }
-        .navigationItem:hover {
-            border-bottom: $secondary-color solid 2px;
-            background-color: $primary-color;
-        }
-    }
-
-    .socialLinks {
-        height: 35%;
-        margin-top: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        
-        .faTwitter, .faMedium, .faLinkedin {
-            font-size: 30px;
-            color: $secondary-color;
-        }
-
-        .faBars {
-            visibility: hidden;
-        }
-    }
-}
-
-.dropDown {
-    display: none;
-}
-
-@media (max-width: 1024px) {
-
     .navigationBar {
         position: fixed;
         display: flex;
@@ -126,7 +55,7 @@
     
         .socialLinks {
             height: 100%;
-            width: 50%;
+            width: 30%;
             margin-top: 0;
             display: flex;
             flex-direction: row;
@@ -150,7 +79,7 @@
         }
     }
     
-}
+
 
 .showDropDown {
     display: inline-block;
