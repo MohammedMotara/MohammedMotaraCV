@@ -1,7 +1,6 @@
 @import '../../assets/variables.scss';
 
 .aboutMePageContainer {
-    margin-left: 160px;
 
     .mainProfilePicture {
         height: 72vh;
@@ -21,7 +20,7 @@
 
         .name {
             color: $primary-text-color;
-            font-size: 48px;
+            font-size: 2.5em;
             width: 100%;
             float: center;
             border-bottom: $secondary-color solid 2px;
@@ -70,14 +69,11 @@
         height: 1000px;
         width: 100%;
         padding: 5%;
-        // margin-top: 20px;
-        // border: green solid 1px;
 
         .servicesSectionTitle {
             font-size: 24px;
             color: $primary-text-color;
             width: 170px;
-            // display: block;
             border-bottom: $secondary-color solid 2px;
         }
 
@@ -95,31 +91,30 @@
 @media (max-width: 1024px) {
 
     .aboutMePageContainer {
-        margin-left: 0px;
-    
+
         .mainProfilePicture {
-            height: 40vh;
-            width: 100%;
-            background-image: url('../../assets/images/IMG_0491\ copy.JPG');
+            height: 72vh;
+            width: 52%;
+            display: inline-block;
+            background-image: url('../../assets/images/IMG_0491.JPG');
+            max-width:100%;
             background-size: cover;
             background-repeat: no-repeat;
-            margin-top: 70px;
         }
-
     
         .personalBlurb {
-            height: 100%;
+            height: 72vh;
             width: 48%;
             float: right;
             padding: 5%;
     
             .name {
                 color: $primary-text-color;
-                font-size: 48px;
+                font-size: 2.5em;
                 width: 100%;
                 float: center;
                 border-bottom: $secondary-color solid 2px;
-                margin-top: 0px;
+                margin-top: 35px;
             }
     
             .currentRole {
@@ -129,19 +124,21 @@
             }
     
             .aboutMePara1 {
-                margin-top: 30px;
+                margin-top: 20px;
                 color: $primary-text-color;
                 font-size: 14px;
                 font-family: $text-font;
                 font-weight: $text-weight;
+                overflow: hidden;
             }
     
             .aboutMePara2 {
-                margin-top: 30px;
+                margin-top: 10px;
                 color: $primary-text-color;
                 font-size: 14px;
                 font-family: $text-font;
                 font-weight: $text-weight;
+                overflow: hidden;
             }
     
             .downloadCVButton {
@@ -153,21 +150,27 @@
                 text-decoration: none;
                 display: inline-block;
                 font-size: 16px;
-                margin-top: 30px;
+                margin-top: 20px;
                 cursor: pointer;
             }
-        }           
+        }
     
         .introductorySection {
             height: 1000px;
             width: 100%;
             padding: 5%;
-            // border: green solid 1px;
     
             .servicesSectionTitle {
                 font-size: 24px;
+                color: $primary-text-color;
                 width: 170px;
                 border-bottom: $secondary-color solid 2px;
+            }
+    
+            .services {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
             }
     
         }
@@ -179,7 +182,6 @@
 @media (max-width: 768px) {
 
     .aboutMePageContainer {
-        margin-left: 0px;
     
         .mainProfilePicture {
             height: 40vh;
@@ -260,8 +262,9 @@
 
 
 @media (max-width: 480px) {
+
     .aboutMePageContainer {
-        margin-left: 0px;
+
     
         .mainProfilePicture {
             height: 40vh;

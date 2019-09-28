@@ -22,11 +22,10 @@ class NavigationBar extends React.Component<IProps, IState> {
 
      
     public render() { 
-        // const openDropDown = this.props.menuStatus ? styles.showDropDown: "";
 
         return (
             <section>
-                {/* {console.log(this.props.menuStatus)} */}
+                {console.log(this.props.menuStatus)}
             <section className={styles.navigationBar}>
                 <div className={styles.profileSection}>
                     <div className={styles.picture} />
@@ -52,9 +51,9 @@ class NavigationBar extends React.Component<IProps, IState> {
                     <div className={styles.faLinkedin}>
                         <FontAwesomeIcon className={styles.logo} icon={faLinkedin}/>
                     </div>
-                    <div className={styles.faBars} onClick={this.props.updateMenuStatus}>
+                    {/* <div className={styles.faBars} onClick={this.props.updateMenuStatus}>
                         <FontAwesomeIcon className={styles.logo} icon={faBars}/>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </section>
