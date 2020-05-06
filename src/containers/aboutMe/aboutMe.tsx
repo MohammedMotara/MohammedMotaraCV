@@ -2,22 +2,47 @@ import * as React from 'react';
 import Service from '../../components/service/service';
 import styles from './aboutMe.module.scss';
 import { servicesArray } from '../../assets/HardCodedData/aboutMeData';
+import { any, string } from 'prop-types';
+import { firestore } from "../../firebase"; 
 
 export interface IProps {
 
 }
  
 export interface IState {
-
+    introductionPara1: string;
 }
  
-class AboutMe extends React.Component<IProps, IState> {
+class AboutMe extends React.Component<IProps, IState> {    
     public state = {
-
+        introductionPara1: "",
     }
 
-    public render() { 
+    getFirestoreData: any = () => {
+        const ref = firestore.collection('about_me').doc('BABiIESKjtFee8QUCRsU')
+        return ref.get()
+        .then(
+            doc => {
+                if (!doc.exists) {
+                    console.log('No such documnt exists');
+                } else {
+                    const exampleDataStore = doc.data();
+                    console.log(exampleDataStore);
+                    alert('hello');
+                }
+            }
+        )
+    };
 
+    componentWillMount() {
+        this.getFirestoreData();
+    }
+
+    componentDidMount() {
+        
+    }
+    
+    public render() { 
         return ( 
             <section className={styles.aboutMePageContainer}>
 
@@ -27,8 +52,9 @@ class AboutMe extends React.Component<IProps, IState> {
                     <h2 className={styles.currentRole}>DevOps</h2>
 
                     <p className={styles.aboutMePara1}>
-                        Welcome to my site. This site is intended to give you a short snippet into 
-                        what I can offer you. Please explore the site and read my content.
+                        Welcome to my site. This site is intended to give you a brief snippet into 
+                        what I can offer you. Please explore the site and contact me below If you'd like
+                        more information.
                     </p>
 
                     <p className={styles.aboutMePara2}>
@@ -60,7 +86,9 @@ class AboutMe extends React.Component<IProps, IState> {
                     
                 </section> */}
             </section>
-         );
+        );
+
+
     }
 }
  
