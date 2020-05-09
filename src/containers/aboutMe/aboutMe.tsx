@@ -1,23 +1,49 @@
 import * as React from 'react';
-import Service from '../../components/service/service';
 import styles from './aboutMe.module.scss';
-import { servicesArray } from '../../assets/HardCodedData/aboutMeData';
+import { any, string } from 'prop-types';
+import { firestore } from "../../firebase"; 
 
 export interface IProps {
 
 }
  
 export interface IState {
-
+    introductionContent: object;
 }
  
-class AboutMe extends React.Component<IProps, IState> {
+class AboutMe extends React.Component<IProps, IState> {    
     public state = {
-
+        introductionContent: {
+            introductionPara1: '',
+            introductionPara2: ''
+        },
     }
 
-    public render() { 
+    componentDidMount() {
+        const getFirestoreData: any = () => {
+            const ref = firestore.collection('about_me').doc('BABiIESKjtFee8QUCRsU')
+            
+            ref.get()
+            .then(
+                doc => {
+                    const firebaseData = {...doc.data()};
+                    console.log(firebaseData);
+                    
+                    const updateState = () => {
+                        this.setState({
+                            introductionContent: firebaseData
+                        })
+                    }
+                    updateState()
+                }
+            )
+        };
 
+        getFirestoreData();
+    }
+
+    
+    public render() { 
         return ( 
             <section className={styles.aboutMePageContainer}>
 
@@ -26,41 +52,16 @@ class AboutMe extends React.Component<IProps, IState> {
                     <h1 className={styles.name}>Mohammed Motara</h1>
                     <h2 className={styles.currentRole}>DevOps</h2>
 
-                    <p className={styles.aboutMePara1}>
-                        Welcome to my site. This site is intended to give you a short snippet into 
-                        what I can offer you. Please explore the site and read my content.
-                    </p>
+                    <p className={styles.aboutMePara1}>{this.state.introductionContent.introductionPara1}</p>
 
-                    <p className={styles.aboutMePara2}>
-                        One of the most important traits I pride myself on is my commercial 
-                        curiosity. Therefore, It's no suprise, that one of my favourite questions
-                        to ask is: why? I hope that as a reader you can see this question throughout
-                        my experiences, whether that is through my writing/commentary or via the tangible
-                        results I have produced when changing workflows and processes in my roles.
-                    </p>
+                    <p className={styles.aboutMePara2}>{this.state.introductionContent.introductionPara2}</p>
 
                     <button className={styles.downloadCVButton}>Formal CV</button>
                 </div>
-
-                {/* <section className={styles.introductorySection}>
-                    <h3 className={styles.servicesSectionTitle}>What can I do?</h3>
-                    
-                    <div className={styles.services}>
-                        {
-                            servicesArray.map((service) => 
-                                <Service 
-                                    skill={service.service} 
-                                    icon={service.serviceIcon} 
-                                    key={servicesArray.indexOf(service)}
-                                />)
-                        }
-                    </div>
-
-                    <section className={styles.clientsAndPreviousWork}/>
-                    
-                </section> */}
             </section>
-         );
+        );
+
+
     }
 }
  
