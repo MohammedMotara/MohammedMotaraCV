@@ -7,11 +7,11 @@ const firebaseConfig = {
     apiKey: "AIzaSyAR8duuCXGyix2M1uwjxhQjPGH4YoL3pjw",
     authDomain: "online-cv-1bbb4.firebaseapp.com",
     databaseURL: "https://online-cv-1bbb4.firebaseio.com",
-    projectId: "online-cv-1bbb4",
     storageBucket: "online-cv-1bbb4.appspot.com",
     messagingSenderId: "123181769306",
     appId: "1:123181769306:web:f4264ed78f2eb541712e63",
-    measurementId: "G-K6XW69L0T8"
+    measurementId: "G-K6XW69L0T8",
+    projectId: "online-cv-1bbb4",
 };
 
 firebase.initializeApp(firebaseConfig);
