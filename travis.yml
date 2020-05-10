@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "11.9.0"
+cache:
+  directories:
+    - node_modules
+script:
+  - yarn build
+branches:
+  only:
+    - master
+    - travisCISetup
+notifications:
+  # slack: nology-uk:je0I2B8Zeu6UZTn3HwEGXNjd
+deploy:
+  provider: firebase
+  skip_cleanup: true
+  local_dir: build
+  token:
+    # secure: tf9wBNZaz/vXikGRrMPo4HlxxWZ9uKnNHIqmTxHd5V7ysLIEKPkJhiLETohXryw0bZbWKpqkqT8WwuHZzKtrbI24BXgnfIQUJ0tE5Kbn9+EOKiFxPbvajqmbFkN8aXxBONQO5vqeKTFre7lFJD5rJMEFsUt1hvOrvmwfkP8iV/SjZepSMJEGHS+yjSQvejeHWfqZvh7wpbSB5R/A/zrZHO8FIdra9rU2b55KDXLCPa/9t0MZ8zCPD+i6wIf7oL5nX661ANGwuIOFZwzI0mf8bufMckYIUR0l4dJ5ZWW+YTCVxqOwsOEMhGVYo+F9NKBwedZthyFrK2sKw1nSW41dH1I4JFkEf2zAKkmrMXhemH8KoB+zw9q0Lba57MczhYQwRDZTyLvnRGBoxMx83i1DeC9HRSQnVCZLjGAOaTtTMppJ2oHWnqZHXgwGtvwYp0JFbSonS0dTBbJqnv6WIEnbmIYQgNqz4jLOexAxXJRM5Nvj9yWfAfFBU0cVPx3ffIQAj0hkA+Qf6V56RAh8OFTExUkCnmL8IgKJp/HHBTbCFZiJ+sUsV6zvs9K1L6UKV8kQY1kpXhtKfRDHdwYkbpyCAriI619kIa1MBBeJPdd5XXipbVNAht7r0G12hlrjY1XGaZLbIKbWnBqrDRaxOQt1LP/oX3vTK1eXKexqdOHeSjE=
