@@ -1,22 +1,27 @@
 language: node_js
 node_js:
-  - "stable"
+  - "node"
 cache:
   directories:
   - node_modules
 script:
   - yarn build
+  - yarn deploy
 branches:
   only:
     - master
     - travisCISetup
-# notifications:
-  # slack: nology-uk:je0I2B8Zeu6UZTn3HwEGXNjd
+
+notifications:
+  email:
+    recipients:
+      - motaramohammed@gmail.com
+    on_success: always
+    on_failure: always
   
 deploy:
   provider: firebase
   skip_cleanup: true
-  github_token: $github_token
   local_dir: build
   on:
     branch: master
