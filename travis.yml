@@ -4,9 +4,12 @@ node_js:
 cache:
   directories:
   - node_modules
+
+# Check this works by deploying existing master branch
 script:
   - yarn build
   - yarn deploy
+
 branches:
   only:
     - master
@@ -18,7 +21,9 @@ notifications:
       - motaramohammed@gmail.com
     on_success: always
     on_failure: always
-  
+
+
+# This is failing
 deploy:
   provider: firebase
   cleanup: true
