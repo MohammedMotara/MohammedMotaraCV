@@ -1,0 +1,43 @@
+language: node_js
+node_js:
+  - "node"
+cache:
+  directories:
+  - node_modules
+
+# Check this works by deploying existing master branch
+script:
+  - yarn build
+  - yarn deploy
+
+branches:
+  only:
+    - master
+    - travisCISetup
+
+notifications:
+  email:
+    recipients:
+      - motaramohammed@gmail.com
+    on_success: always
+    on_failure: always
+
+
+# This is failing
+deploy:
+  provider: firebase
+  cleanup: true
+  local_dir: build
+  on:
+    branch: master
+
+
+
+# notifications:
+#   # slack: nology-uk:je0I2B8Zeu6UZTn3HwEGXNjd
+
+#   deploy:
+#   provider: firebase
+#   skip_cleanup: true
+#   local_dir: build
+  
