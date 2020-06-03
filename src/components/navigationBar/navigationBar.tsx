@@ -25,7 +25,6 @@ class NavigationBar extends React.Component<IProps, IState> {
             <section>
             <section className={styles.navigationBar}>
                 <div className={styles.profileSection}>
-                    <div className={styles.picture} />
                     <h1 className={styles.name}>Mo Motara</h1>
                 </div>
 

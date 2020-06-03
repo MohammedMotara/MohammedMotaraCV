@@ -11,6 +11,7 @@
         border-right: none;
         overflow: hidden;
         height: 70px;
+        z-index: 2;
     
         .profileSection {
             height: 100%;
@@ -18,15 +19,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-    
-            .picture {
-                height: 40px;
-                width: 40px;
-                background-image: url('../../assets/images/IMG_0491.JPG');
-                background-size: cover;
-                margin: 0;
-                margin-left: 20px;
-            }
+
             .name {
                 text-align: center;
                 margin: 0px;
@@ -106,14 +99,6 @@
             align-items: center;
             justify-content: flex-start;
     
-            .picture {
-                height: 40px;
-                width: 40px;
-                background-image: url('../../assets/images/IMG_0491.JPG');
-                background-size: cover;
-                margin: 0;
-                margin-left: 20px;
-            }
             .name {
                 text-align: center;
                 margin: 0px;
@@ -163,7 +148,3 @@
         }
     }
 }
-
-// .dropDown {
-//     display: none;
-// }

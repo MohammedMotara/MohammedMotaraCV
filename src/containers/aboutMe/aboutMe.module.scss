@@ -3,38 +3,66 @@
 .aboutMePageContainer {
 
     .mainProfilePicture {
-        height: 72vh;
-        width: 52%;
+        height: 85vh;
+        width: 100%;
         display: inline-block;
-        background-image: url('../../assets/images/IMG_0491.JPG');
+        background-image: url('../../assets/images/agileBoardLarge.jpg');
         max-width:100%;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .personalBlurb {
-        height: 72vh;
-        width: 48%;
-        float: right;
-        padding: 5%;
+    .identityInfo {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        z-index: 1;
 
         .name {
             color: $primary-text-color;
-            font-size: 2.5em;
-            width: 100%;
-            float: center;
+            font-size: 43px;
+            width: 80%;
+            margin-left: 10px;
             border-bottom: $secondary-color solid 2px;
-            margin-top: 30px;
         }
 
         .currentRole {
             font-size: 14px;
             color: $sub-title-color;
             margin-top: 10px;
+            margin-left: 10px;
+        }
+    }
+
+    .personalBlurb {
+        height: 72vh;
+        width: 100%;
+        padding: 5%;
+
+        .sectionTitle{
+            font-style: $heading-font;
+            text-align: center;
+            font-size: $heading-font-size;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 150px;
+            border-bottom: $secondary-color solid 2px;
+        }
+
+        .profilePicture{
+            background-image: url('../../assets/images/profilePictureReducedSize.jpg');
+            border-radius: 50px;
+            max-width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 100px;
+            margin: auto;
         }
 
         .aboutMePara1 {
             margin-top: 30px;
+            text-align: center;
             color: $primary-text-color;
             font-size: 14px;
             font-family: $text-font;
@@ -46,45 +74,32 @@
             margin-top: 30px;
             color: $primary-text-color;
             font-size: 14px;
+            text-align: center;
             font-family: $text-font;
             font-weight: $text-weight;
             overflow: hidden;
         }
 
-        .downloadCVButton {
-            background-color: $secondary-color;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-top: 40px;
-            cursor: pointer;
-        }
-    }
+        .buttonContainer {
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: 50px;
+            margin-top: 30px;
 
-    .introductorySection {
-        height: 1000px;
-        width: 100%;
-        padding: 5%;
-
-        .servicesSectionTitle {
-            font-size: 24px;
-            color: $primary-text-color;
-            width: 170px;
-            border-bottom: $secondary-color solid 2px;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            .downloadCVButton {
+                background-color: $secondary-color;
+                margin: auto;
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+            }
         }
 
     }
-    
 }
 
 
@@ -93,38 +108,66 @@
     .aboutMePageContainer {
 
         .mainProfilePicture {
-            height: 72vh;
-            width: 52%;
+            height: 85vh;
+            width: 100%;
             display: inline-block;
-            background-image: url('../../assets/images/IMG_0491.JPG');
+            background-image: url('../../assets/images/agileBoard.jpg');
             max-width:100%;
             background-size: cover;
             background-repeat: no-repeat;
         }
-    
-        .personalBlurb {
-            height: 72vh;
-            width: 48%;
-            float: right;
-            padding: 5%;
-    
+
+        .identityInfo {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            z-index: 1;
+
             .name {
                 color: $primary-text-color;
-                font-size: 2.5em;
-                width: 100%;
-                float: center;
+                font-size: 43px;
+                width: 80%;
+                margin-left: 10px;
                 border-bottom: $secondary-color solid 2px;
-                margin-top: 35px;
             }
     
             .currentRole {
                 font-size: 14px;
                 color: $sub-title-color;
                 margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+    
+        .personalBlurb {
+            height: 72vh;
+            width: 100%;
+            padding: 5%;
+    
+            .sectionTitle{
+                font-style: $heading-font;
+                text-align: center;
+                font-size: $heading-font-size;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 150px;
+                border-bottom: $secondary-color solid 2px;
+            }
+    
+            .profilePicture{
+                background-image: url('../../assets/images/profilePictureReducedSize.jpg');
+                border-radius: 50px;
+                max-width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100px;
+                width: 100px;
+                margin: auto;
             }
     
             .aboutMePara1 {
-                margin-top: 20px;
+                margin-top: 30px;
+                text-align: center;
                 color: $primary-text-color;
                 font-size: 14px;
                 font-family: $text-font;
@@ -133,50 +176,36 @@
             }
     
             .aboutMePara2 {
-                margin-top: 10px;
+                margin-top: 30px;
                 color: $primary-text-color;
                 font-size: 14px;
+                text-align: center;
                 font-family: $text-font;
                 font-weight: $text-weight;
                 overflow: hidden;
             }
     
-            .downloadCVButton {
-                background-color: $secondary-color;
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin-top: 20px;
-                cursor: pointer;
-            }
-        }
+            .buttonContainer {
+                display: block;
+                margin: auto;
+                width: 200px;
+                height: 50px;
+                margin-top: 30px;
     
-        .introductorySection {
-            height: 1000px;
-            width: 100%;
-            padding: 5%;
-    
-            .servicesSectionTitle {
-                font-size: 24px;
-                color: $primary-text-color;
-                width: 170px;
-                border-bottom: $secondary-color solid 2px;
-            }
-    
-            .services {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+                .downloadCVButton {
+                    background-color: $secondary-color;
+                    margin: auto;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                    cursor: pointer;
+                    height: 100%;
+                    width: 100%;
+                }
             }
     
         }
-        
     }
-
 }
 
 @media (max-width: 768px) {
@@ -184,106 +213,130 @@
     .aboutMePageContainer {
     
         .mainProfilePicture {
-            height: 40vh;
+            height: 85vh;
             width: 100%;
-            background-image: url('../../assets/images/mobileImage.JPG');
+            background-image: url('../../assets/images/agileBoard.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             margin-top: 70px;
         }
 
-    
-        .personalBlurb {
-            height: 100%;
-            width: 100%;
-            padding: 5%;
-    
+        .identityInfo {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            z-index: 1;
+
             .name {
                 color: $primary-text-color;
-                font-size: 48px;
-                width: 100%;
+                font-size: 43px;
+                width: 80%;
+                margin-left: 10px;
                 border-bottom: $secondary-color solid 2px;
-                margin-top: 0px;
             }
     
             .currentRole {
                 font-size: 14px;
                 color: $sub-title-color;
                 margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+
+    
+        .personalBlurb {
+            height: 72vh;
+            width: 100%;
+            padding: 5%;
+    
+            .sectionTitle{
+                font-style: $heading-font;
+                text-align: center;
+                font-size: $heading-font-size;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 150px;
+                border-bottom: $secondary-color solid 2px;
+            }
+    
+            .profilePicture{
+                background-image: url('../../assets/images/profilePictureReducedSize.jpg');
+                border-radius: 50px;
+                max-width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100px;
+                width: 100px;
+                margin: auto;
             }
     
             .aboutMePara1 {
                 margin-top: 30px;
+                text-align: center;
                 color: $primary-text-color;
                 font-size: 14px;
                 font-family: $text-font;
                 font-weight: $text-weight;
+                overflow: hidden;
             }
     
             .aboutMePara2 {
                 margin-top: 30px;
                 color: $primary-text-color;
                 font-size: 14px;
+                text-align: center;
                 font-family: $text-font;
                 font-weight: $text-weight;
+                overflow: hidden;
             }
     
-            .downloadCVButton {
-                background-color: $secondary-color;
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
+            .buttonContainer {
+                display: block;
+                margin: auto;
+                width: 200px;
+                height: 50px;
                 margin-top: 30px;
-                cursor: pointer;
-            }
-        }
     
-        .introductorySection {
-            height: 1000px;
-            width: 100%;
-            padding: 5%;
-            // border: green solid 1px;
-    
-            .servicesSectionTitle {
-                font-size: 24px;
-                width: 170px;
-                border-bottom: $secondary-color solid 2px;
+                .downloadCVButton {
+                    background-color: $secondary-color;
+                    margin: auto;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                    cursor: pointer;
+                    height: 100%;
+                    width: 100%;
+                }
             }
     
         }
-        
     }
-
 }
 
 
 @media (max-width: 480px) {
 
     .aboutMePageContainer {
-
-    
         .mainProfilePicture {
-            height: 40vh;
+            height: 85vh;
             width: 100%;
-            background-image: url('../../assets/images/mobileImage.JPG');
+            background-image: url('../../assets/images/agileBoard.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             margin-top: 70px;
         }
 
-        .personalBlurb {
-            height: 100%;
-            width: 100%;
-            padding: 5%;
-    
+        .identityInfo {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            z-index: 1;
+
             .name {
                 color: $primary-text-color;
-                font-size: 48px;
-                width: 100%;
+                font-size: 43px;
+                width: 80%;
+                margin-left: 10px;
                 border-bottom: $secondary-color solid 2px;
             }
     
@@ -291,55 +344,74 @@
                 font-size: 14px;
                 color: $sub-title-color;
                 margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        .personalBlurb {
+            height: 72vh;
+            width: 100%;
+            padding: 5%;
+    
+            .sectionTitle{
+                font-style: $heading-font;
+                text-align: center;
+                font-size: $heading-font-size;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 150px;
+                border-bottom: $secondary-color solid 2px;
+            }
+    
+            .profilePicture{
+                background-image: url('../../assets/images/profilePictureReducedSize.jpg');
+                border-radius: 50px;
+                max-width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100px;
+                width: 100px;
+                margin: auto;
             }
     
             .aboutMePara1 {
                 margin-top: 30px;
+                text-align: center;
                 color: $primary-text-color;
                 font-size: 14px;
                 font-family: $text-font;
                 font-weight: $text-weight;
+                overflow: hidden;
             }
     
             .aboutMePara2 {
                 margin-top: 30px;
                 color: $primary-text-color;
                 font-size: 14px;
+                text-align: center;
                 font-family: $text-font;
                 font-weight: $text-weight;
+                overflow: hidden;
             }
     
-            .downloadCVButton {
-                background-color: $secondary-color;
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin-top: 30px;
-                cursor: pointer;
-            }
-        }
-    
-        .introductorySection {
-            height: 1000px;
-            width: 100%;
-            padding: 5%;
-            // border: green solid 1px;
-    
-            .servicesSectionTitle {
-                font-size: 24px;
-                width: 170px;
-                border-bottom: $secondary-color solid 2px;
-                margin-top: 20px;
-                // float: right;
+            .buttonContainer {
                 display: block;
-            }
+                margin: auto;
+                width: 200px;
+                height: 50px;
+                margin-top: 30px;
     
+                .downloadCVButton {
+                    background-color: $secondary-color;
+                    margin: auto;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                    cursor: pointer;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
         }
-        
     }
-
 }

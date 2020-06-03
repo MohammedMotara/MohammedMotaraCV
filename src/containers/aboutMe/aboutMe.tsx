@@ -53,16 +53,23 @@ class AboutMe extends React.Component<IProps, IState> {
         return ( 
             <section className={styles.aboutMePageContainer}>
 
-                <div className={styles.mainProfilePicture}/>
+                <div className={styles.mainProfilePicture}>
+                    <div className={styles.identityInfo}>
+                        <h1 className={styles.name}>{this.state.introductionContent.name}</h1>
+                        <h2 className={styles.currentRole}>{this.state.introductionContent.role}</h2>
+                    </div>
+                </div>
+
                 <div className={styles.personalBlurb}>
-                    <h1 className={styles.name}>{this.state.introductionContent.name}</h1>
-                    <h2 className={styles.currentRole}>{this.state.introductionContent.role}</h2>
+                    <h2 className={styles.sectionTitle}>About Me</h2>
+                    <div className={styles.profilePicture}/>
 
                     <p className={styles.aboutMePara1}>{this.state.introductionContent.introductionPara1}</p>
-
                     <p className={styles.aboutMePara2}>{this.state.introductionContent.introductionPara2}</p>
-
-                    <button className={styles.downloadCVButton}>Formal CV</button>
+                    
+                    <div className={styles.buttonContainer}>
+                        <button className={styles.downloadCVButton}>Formal CV</button>
+                    </div>
                 </div>
             </section>
         );
