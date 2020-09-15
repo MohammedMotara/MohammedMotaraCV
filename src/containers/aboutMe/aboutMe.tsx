@@ -68,7 +68,9 @@ class AboutMe extends React.Component<IProps, IState> {
                     <p className={styles.aboutMePara2}>{this.state.introductionContent.introductionPara2}</p>
                     
                     <div className={styles.buttonContainer}>
-                        <button className={styles.downloadCVButton}>Formal CV</button>
+                        <a href="">
+                            <button className={styles.downloadCVButton}>Formal CV</button>
+                        </a>
                     </div>
                 </div>
             </section>
